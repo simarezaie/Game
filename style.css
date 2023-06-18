@@ -1,0 +1,90 @@
+/* body and  container*/
+* {
+  margin: 0;
+  padding: 0;
+}
+html {
+  height: 100%;
+}
+body {
+  background-color: #0b2447;
+  text-align: center;
+  min-height: 100%;
+}
+#container {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 5% 37%;
+  gap: 7%;
+}
+/* flex-items */
+.colors {
+  width: 43%;
+  box-sizing: border-box;
+  border: solid black 6px;
+  border-radius: 20px;
+  padding: 20%;
+  margin-bottom: 7%;
+}
+.green-box {
+  background-color: #2b7a0b;
+}
+.yellow-box {
+  background-color: #fce22a;
+}
+.blue-box {
+  background-color: #0014ff;
+}
+.red-box {
+  background-color: #e21818;
+}
+/* the heading*/
+#heading {
+  padding: 3%;
+  font-size: 3vw;
+  color: #fffbac;
+  font-family: "Comic Sans MS", "Comic Sans", cursive;
+}
+/* header and footer*/
+footer {
+  padding: 20px;
+  background-color: black;
+  margin-top: auto;
+}
+header {
+  padding: 20px;
+  background-color: black;
+}
+/* responsive css for iphone*/
+@media screen and (max-width: 992px) {
+  header,
+  footer {
+    padding: 50px;
+  }
+  #flex-container {
+    padding: 1% 20%;
+    margin-top: 10%;
+  }
+  #colors {
+    width: 50%;
+  }
+  #heading {
+    margin-top: 20%;
+    font-size: 5vw;
+  }
+}
+/*responsive css for  small devices 375-661*/
+@media only screen and (min-device-width: 375px) and (max-device-width: 661px) {
+  #flex-container {
+    padding: 1% 20%;
+    margin-top: 5%;
+  }
+  #heading {
+    font-size: 5vw;
+  }
+}
+/*this classes are for Javascript*/
+.select {
+  filter: brightness(100%);
+  box-shadow: 0 0 45px white;
+}
